@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import LoginPage from "./scenes/loginPage";
+import PublicHomePage from "./scenes/publicHomePage";
+import PrivateHomePage from "./scenes/privateHomePage";
+import { useSelector } from 'react-redux'
+
 
 function App() {
+
+  const isAuth = Boolean(useSelector((state) => state.token));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PublicHomePage />} />
+        <Route
+          path="/privatehome"
+          element={isAuth ? <PrivateHomePage /> : <Navigate to="/" />}
+        />
+        <Route
+          path="/login"
+          element={<LoginPage />}
+        />
+      </Routes>
+  </BrowserRouter>
   );
 }
 
