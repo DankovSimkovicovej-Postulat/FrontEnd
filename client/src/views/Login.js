@@ -1,11 +1,9 @@
 import React from "react";
 
-import Navbar from "../../components/Navbar.js";
-import FooterSmall from "../../components/FooterSmall.js";
-import { useNavigate } from 'react-router-dom';
+import Navbar from "components/Navbar.js";
+import FooterSmall from "components/FooterSmall.js";
 
-export default function LoginPage() {
-  const navigate = useNavigate();
+export default function Login() {
   return (
     <>
       <Navbar transparent />
@@ -15,7 +13,7 @@ export default function LoginPage() {
             className="absolute top-0 w-full h-full bg-gray-900"
             style={{
               backgroundImage:
-                "url(" + require("../../assets/img/register_bg_2.png").default + ")",
+                "url(" + require("assets/img/register_bg_2.png").default + ")",
               backgroundSize: "100%",
               backgroundRepeat: "no-repeat"
             }}
@@ -39,7 +37,7 @@ export default function LoginPage() {
                         <img
                           alt="..."
                           className="w-5 mr-1"
-                          src={require("../../assets/img/github.svg").default}
+                          src={require("assets/img/github.svg").default}
                         />
                         Github
                       </button>
@@ -51,7 +49,7 @@ export default function LoginPage() {
                         <img
                           alt="..."
                           className="w-5 mr-1"
-                          src={require("../../assets/img/google.svg").default}
+                          src={require("assets/img/google.svg").default}
                         />
                         Google
                       </button>
@@ -111,7 +109,6 @@ export default function LoginPage() {
                           className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
                           type="button"
                           style={{ transition: "all .15s ease" }}
-                          onClick={() => navigate('/privatehome')} // TODO change later
                         >
                           Sign In
                         </button>

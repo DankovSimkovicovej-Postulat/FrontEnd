@@ -1,8 +1,12 @@
 import React from 'react'
+import NavBar from '../navbar'
 
 const PrivateHomePage = () => {
   return (
-    <div>PrivateHomePage</div>
+    <div>
+      <NavBar />
+      <div>PrivateHomePage</div>
+    </div>
   )
 }
 
