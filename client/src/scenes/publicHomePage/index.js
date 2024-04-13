@@ -1,17 +1,16 @@
 import React from 'react'
-import Navbar from '../navbar'
-import DragAndDrop from '../../components/DragAndDrop'
+import PublicNavbar from '../publicNavbar'
 
 const PublicHomePage = () => {
   return (
     <>
-      <Navbar />
+      <PublicNavbar />
       <div class="px-40 pb-16">
         <div class="py-10 mr-60">
           <span class="text-black text-5xl font-bold">
           Jednoducho prehliadaj registre 
-  právnických osob  v oblasti umenia, 
-  kultúry a kreatívneho priemyslu
+          právnických osôb v oblasti umenia, 
+          kultúry a kreatívneho priemyslu 
           </span>
         </div>
         <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
@@ -44,13 +43,9 @@ const PublicHomePage = () => {
           </div>
         </div>
 
-        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+        <hr class="h-px mt-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
-        <div class="text-3xl pt-4 font-bold text-blue-600">Pridávanie Subjektov</div>
-
-        <div class="py-8 w-screen">
-            <DragAndDrop />
-        </div>
+       
       </div>
     </>
   )
