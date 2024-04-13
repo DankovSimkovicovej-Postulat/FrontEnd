@@ -5,6 +5,9 @@ const PrivateHomePage = () => {
   return (
     <div>
       <NavBar />
+      <div>
+        
+      </div>
       <div>PrivateHomePage</div>
     </div>
   )
