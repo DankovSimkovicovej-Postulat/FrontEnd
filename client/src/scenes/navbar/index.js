@@ -20,10 +20,10 @@ const Navbar = () => {
           <span className="text-blue-950 font-bold text-3xl">Kulturne registre</span>
         </div>
         <div className="flex space-x-8">
-          <button className="text-blue-950 text-xl">API</button>
-          <button className="text-blue-950 text-xl">Historia</button>
-          <button className="text-blue-950 text-xl">Ziadosti</button>
-          <button className="text-blue-950 text-xl" onClick={() => navigate('/')}>Odhlasit sa</button>
+          <button className="text-blue-950 text-xl hover:underline">API</button>
+          <button className="text-blue-950 text-xl hover:underline">Historia</button>
+          <button className="text-blue-950 text-xl hover:underline">Ziadosti</button>
+          <button className="text-blue-950 text-xl hover:underline" onClick={() => navigate('/')}>Odhlasit sa</button>
         </div>
       </nav>
     </div>

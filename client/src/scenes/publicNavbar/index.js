@@ -20,10 +20,10 @@ const PublicNavbar = () => {
           <span className="text-blue-950 font-bold text-3xl">Kulturne registre</span>
         </div>
         <div className="flex space-x-8">
-          <button className="text-blue-950 text-xl">API</button>
-          <button className="text-blue-950 text-xl">Podat Ziadost</button>
-          <button className="text-blue-950 text-xl">Kontakt</button>
-          <button className="text-blue-950 text-xl" onClick={() => navigate('/login')}>Prihlasit sa</button>
+          <button className="text-blue-950 text-xl hover:underline">API</button>
+          <button className="text-blue-950 text-xl hover:underline">Podat Ziadost</button>
+          <button className="text-blue-950 text-xl hover:underline">Kontakt</button>
+          <button className="text-blue-950 text-xl hover:underline" onClick={() => navigate('/login')}>Prihlasit sa</button>
         </div>
       </nav>
     </div>
