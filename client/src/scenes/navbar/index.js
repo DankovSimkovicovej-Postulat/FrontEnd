@@ -1,7 +1,9 @@
 import React from 'react';
 import slovensko from '../../assets/img/slovensko.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <nav className="flex justify-between items-center bg-blue-950 py-3 px-40">
@@ -21,7 +23,7 @@ const Navbar = () => {
           <button className="text-blue-950 text-xl">API</button>
           <button className="text-blue-950 text-xl">Historia</button>
           <button className="text-blue-950 text-xl">Ziadosti</button>
-          <button className="text-blue-950 text-xl">Odhlasit sa</button>
+          <button className="text-blue-950 text-xl" onClick={() => navigate('/')}>Odhlasit sa</button>
         </div>
       </nav>
     </div>

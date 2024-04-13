@@ -1,0 +1,52 @@
+{"registers": 
+  {
+    "id": 1665873,
+    "established_on": "1800-01-01",
+    "terminated_on": "1800-01-01",
+    "actualized_at": "None",
+    "has_organization_unit": "False",
+    "has_operations": "False",
+    "address_entries": [
+        {
+            "id": 503383,
+            "organization_id": 1665873,
+            "formatted_address": "None",
+            "street": "Párovská ul",
+            "reg_number": 0,
+            "building_number": ".",
+            "postal_code": "None",
+            "municipality": "Pata",
+            "country": "Slovenská republika",
+            "effective_from": "1800-01-01",
+            "effective_to": "1800-01-01",
+            "created_at": "2016-05-15T07:40:51.021723Z",
+            "updated_at": "2016-05-15T07:40:51.021723Z",
+            "district": "None"
+        }
+    ],
+    "economic_activity_entries": [
+        {
+            "id": 3801578,
+            "organization_id": 1665873,
+            "description": "Nákup a predaj potravín,alko-nealko nápojov v orig.balení.",
+            "effective_from": "1800-01-01",
+            "effective_to": "1800-01-01",
+            "created_at": "2016-05-15T07:40:51.022992Z",
+            "updated_at": "2016-05-15T07:40:51.022992Z",
+            "suspended_from": "None",
+            "suspended_to": "None"
+        }
+    ],
+    "name_entries": [
+        {
+            "id": 404445,
+            "organization_id": 1665873,
+            "name": "Helena Meszárošová - prevádzkareň",
+            "effective_from": "1800-01-01",
+            "effective_to": "1800-01-01",
+            "created_at": "2016-05-15T07:40:51.020505Z",
+            "updated_at": "2016-05-15T07:40:51.020505Z"
+        }
+    ]
+  }
+}

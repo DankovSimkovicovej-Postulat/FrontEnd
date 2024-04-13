@@ -1,9 +1,11 @@
 import React from 'react'
 import Navbar from '../navbar'
 import DragAndDrop from '../../components/DragAndDrop'
+import  registers   from '../../data/registers.json'
 
 
 const PrivateHomePage = () => {
+
   return (
     <>
       <Navbar />
