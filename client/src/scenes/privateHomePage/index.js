@@ -5,7 +5,10 @@ import  registers   from '../../data/registers.json'
 
 
 const PrivateHomePage = () => {
-
+  const showResults = (e) => {
+    e.preventDefault()
+    document.querySelector('p').classList.remove('invisible')
+  }
   return (
     <>
       <Navbar />
@@ -20,12 +23,12 @@ const PrivateHomePage = () => {
         <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
         <div class="text-3xl pt-4 font-bold text-blue-600">Hľadanie Subjektov</div>
         <div class="font-bold py-4">Aké subjekty chcete zobraziť?</div>
-        <div class="pb-8">
+        <div class="pb-4">
           <div class="flex flex-row justify-between">
             <form class="flex flex-col md:flex-row gap-3 ">
               <div class="flex">
                   <input type="text" placeholder="Zadajte IČO" class="w-full md:w-80 px-3 h-10 rounded-l border-2 border-blue-600 focus:outline-none focus:border-blue-600" />
-                  <button type="submit" class="bg-blue-600 hover:bg-blue-650 text-white rounded-r px-2 md:px-3 py-0 md:py-1">hľadaj</button>
+                  <button type="submit" onClick={(e) => showResults(e)} class="bg-blue-600 hover:bg-blue-650 text-white rounded-r px-2 md:px-3 py-0 md:py-1">hľadaj</button>
               </div>
               <select id="pricingType" name="pricingType" class="w-30 h-10 border-2 border-blue-600 focus:outline-none focus:border-blue-650 text-blue-600 rounded px-2 md:px-3 py-0 md:py-1 tracking-wider">
                 <option value="All" selected="">Všetky</option>
@@ -46,6 +49,9 @@ const PrivateHomePage = () => {
             </div>
           </div>
         </div>
+        <p class="invisible pb-4">
+          Vyhľadávanie úspešné. Bol nájdený <span class="font-bold">{1}</span> subjekt.
+        </p>
 
         <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
